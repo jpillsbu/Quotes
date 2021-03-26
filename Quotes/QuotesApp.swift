@@ -1,6 +1,6 @@
 //
 //  Funny_QuotesApp.swift
-//  Funny Quotes
+//  Quotes
 //
 //  Created by John Pillsbury on 3/25/21.
 //
@@ -8,7 +8,7 @@
 import SwiftUI
 
 @main
-struct Funny_QuotesApp: App {
+struct QuotesApp: App {
     var body: some Scene {
         WindowGroup {
             ContentView()

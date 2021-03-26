@@ -7,19 +7,29 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		43BD1A68260D4EFC000EF772 /* Funny_QuotesApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43BD1A67260D4EFC000EF772 /* Funny_QuotesApp.swift */; };
+		435971EE260D5EEA00CB2849 /* QuoteDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 435971ED260D5EEA00CB2849 /* QuoteDetailView.swift */; };
+		43BD1A68260D4EFC000EF772 /* QuotesApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43BD1A67260D4EFC000EF772 /* QuotesApp.swift */; };
 		43BD1A6A260D4EFC000EF772 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43BD1A69260D4EFC000EF772 /* ContentView.swift */; };
 		43BD1A6C260D4EFD000EF772 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 43BD1A6B260D4EFD000EF772 /* Assets.xcassets */; };
 		43BD1A6F260D4EFD000EF772 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 43BD1A6E260D4EFD000EF772 /* Preview Assets.xcassets */; };
+		43BD1A7D260D5003000EF772 /* quotes.json in Resources */ = {isa = PBXBuildFile; fileRef = 43BD1A7C260D5003000EF772 /* quotes.json */; };
+		43BD1A80260D5745000EF772 /* DataService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43BD1A7F260D5745000EF772 /* DataService.swift */; };
+		43BD1A84260D5795000EF772 /* Quote.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43BD1A83260D5795000EF772 /* Quote.swift */; };
+		43BD1A87260D5A23000EF772 /* QuoteModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43BD1A86260D5A23000EF772 /* QuoteModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		43BD1A64260D4EFC000EF772 /* Funny Quotes.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Funny Quotes.app"; sourceTree = BUILT_PRODUCTS_DIR; };
-		43BD1A67260D4EFC000EF772 /* Funny_QuotesApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Funny_QuotesApp.swift; sourceTree = "<group>"; };
+		435971ED260D5EEA00CB2849 /* QuoteDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuoteDetailView.swift; sourceTree = "<group>"; };
+		43BD1A64260D4EFC000EF772 /* Quotes.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Quotes.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		43BD1A67260D4EFC000EF772 /* QuotesApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuotesApp.swift; sourceTree = "<group>"; };
 		43BD1A69260D4EFC000EF772 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		43BD1A6B260D4EFD000EF772 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		43BD1A6E260D4EFD000EF772 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		43BD1A70260D4EFD000EF772 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		43BD1A7C260D5003000EF772 /* quotes.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = quotes.json; sourceTree = "<group>"; };
+		43BD1A7F260D5745000EF772 /* DataService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataService.swift; sourceTree = "<group>"; };
+		43BD1A83260D5795000EF772 /* Quote.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Quote.swift; sourceTree = "<group>"; };
+		43BD1A86260D5A23000EF772 /* QuoteModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuoteModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -36,7 +46,7 @@
 		43BD1A5B260D4EFC000EF772 = {
 			isa = PBXGroup;
 			children = (
-				43BD1A66260D4EFC000EF772 /* Funny Quotes */,
+				43BD1A66260D4EFC000EF772 /* Quotes */,
 				43BD1A65260D4EFC000EF772 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -44,21 +54,25 @@
 		43BD1A65260D4EFC000EF772 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				43BD1A64260D4EFC000EF772 /* Funny Quotes.app */,
+				43BD1A64260D4EFC000EF772 /* Quotes.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
 		};
-		43BD1A66260D4EFC000EF772 /* Funny Quotes */ = {
+		43BD1A66260D4EFC000EF772 /* Quotes */ = {
 			isa = PBXGroup;
 			children = (
-				43BD1A67260D4EFC000EF772 /* Funny_QuotesApp.swift */,
-				43BD1A69260D4EFC000EF772 /* ContentView.swift */,
+				43BD1A7B260D4F23000EF772 /* Views */,
+				43BD1A7A260D4F19000EF772 /* ViewModels */,
+				43BD1A78260D4F0C000EF772 /* Models */,
+				43BD1A79260D4F14000EF772 /* Services */,
+				43BD1A77260D4F03000EF772 /* Data */,
+				43BD1A67260D4EFC000EF772 /* QuotesApp.swift */,
 				43BD1A6B260D4EFD000EF772 /* Assets.xcassets */,
 				43BD1A70260D4EFD000EF772 /* Info.plist */,
 				43BD1A6D260D4EFD000EF772 /* Preview Content */,
 			);
-			path = "Funny Quotes";
+			path = Quotes;
 			sourceTree = "<group>";
 		};
 		43BD1A6D260D4EFD000EF772 /* Preview Content */ = {
@@ -69,12 +83,53 @@
 			path = "Preview Content";
 			sourceTree = "<group>";
 		};
+		43BD1A77260D4F03000EF772 /* Data */ = {
+			isa = PBXGroup;
+			children = (
+				43BD1A7C260D5003000EF772 /* quotes.json */,
+			);
+			path = Data;
+			sourceTree = "<group>";
+		};
+		43BD1A78260D4F0C000EF772 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				43BD1A83260D5795000EF772 /* Quote.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		43BD1A79260D4F14000EF772 /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				43BD1A7F260D5745000EF772 /* DataService.swift */,
+			);
+			path = Services;
+			sourceTree = "<group>";
+		};
+		43BD1A7A260D4F19000EF772 /* ViewModels */ = {
+			isa = PBXGroup;
+			children = (
+				43BD1A86260D5A23000EF772 /* QuoteModel.swift */,
+			);
+			path = ViewModels;
+			sourceTree = "<group>";
+		};
+		43BD1A7B260D4F23000EF772 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				43BD1A69260D4EFC000EF772 /* ContentView.swift */,
+				435971ED260D5EEA00CB2849 /* QuoteDetailView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		43BD1A63260D4EFC000EF772 /* Funny Quotes */ = {
+		43BD1A63260D4EFC000EF772 /* Quotes */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 43BD1A73260D4EFD000EF772 /* Build configuration list for PBXNativeTarget "Funny Quotes" */;
+			buildConfigurationList = 43BD1A73260D4EFD000EF772 /* Build configuration list for PBXNativeTarget "Quotes" */;
 			buildPhases = (
 				43BD1A60260D4EFC000EF772 /* Sources */,
 				43BD1A61260D4EFC000EF772 /* Frameworks */,
@@ -84,9 +139,9 @@
 			);
 			dependencies = (
 			);
-			name = "Funny Quotes";
+			name = Quotes;
 			productName = "Funny Quotes";
-			productReference = 43BD1A64260D4EFC000EF772 /* Funny Quotes.app */;
+			productReference = 43BD1A64260D4EFC000EF772 /* Quotes.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
@@ -103,7 +158,7 @@
 					};
 				};
 			};
-			buildConfigurationList = 43BD1A5F260D4EFC000EF772 /* Build configuration list for PBXProject "Funny Quotes" */;
+			buildConfigurationList = 43BD1A5F260D4EFC000EF772 /* Build configuration list for PBXProject "Quotes" */;
 			compatibilityVersion = "Xcode 9.3";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
@@ -116,7 +171,7 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				43BD1A63260D4EFC000EF772 /* Funny Quotes */,
+				43BD1A63260D4EFC000EF772 /* Quotes */,
 			);
 		};
 /* End PBXProject section */
@@ -128,6 +183,7 @@
 			files = (
 				43BD1A6F260D4EFD000EF772 /* Preview Assets.xcassets in Resources */,
 				43BD1A6C260D4EFD000EF772 /* Assets.xcassets in Resources */,
+				43BD1A7D260D5003000EF772 /* quotes.json in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -138,8 +194,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				435971EE260D5EEA00CB2849 /* QuoteDetailView.swift in Sources */,
+				43BD1A87260D5A23000EF772 /* QuoteModel.swift in Sources */,
+				43BD1A84260D5795000EF772 /* Quote.swift in Sources */,
+				43BD1A80260D5745000EF772 /* DataService.swift in Sources */,
 				43BD1A6A260D4EFC000EF772 /* ContentView.swift in Sources */,
-				43BD1A68260D4EFC000EF772 /* Funny_QuotesApp.swift in Sources */,
+				43BD1A68260D4EFC000EF772 /* QuotesApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -268,16 +328,16 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_ASSET_PATHS = "\"Funny Quotes/Preview Content\"";
+				DEVELOPMENT_ASSET_PATHS = "\"Quotes/Preview Content\"";
 				DEVELOPMENT_TEAM = 36LM6B48H3;
 				ENABLE_PREVIEWS = YES;
-				INFOPLIST_FILE = "Funny Quotes/Info.plist";
+				INFOPLIST_FILE = Quotes/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = "com.professionalpillsbury.Funny-Quotes";
+				PRODUCT_BUNDLE_IDENTIFIER = com.professionalpillsbury.Quotes;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -290,16 +350,16 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_ASSET_PATHS = "\"Funny Quotes/Preview Content\"";
+				DEVELOPMENT_ASSET_PATHS = "\"Quotes/Preview Content\"";
 				DEVELOPMENT_TEAM = 36LM6B48H3;
 				ENABLE_PREVIEWS = YES;
-				INFOPLIST_FILE = "Funny Quotes/Info.plist";
+				INFOPLIST_FILE = Quotes/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = "com.professionalpillsbury.Funny-Quotes";
+				PRODUCT_BUNDLE_IDENTIFIER = com.professionalpillsbury.Quotes;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -309,7 +369,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		43BD1A5F260D4EFC000EF772 /* Build configuration list for PBXProject "Funny Quotes" */ = {
+		43BD1A5F260D4EFC000EF772 /* Build configuration list for PBXProject "Quotes" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				43BD1A71260D4EFD000EF772 /* Debug */,
@@ -318,7 +378,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		43BD1A73260D4EFD000EF772 /* Build configuration list for PBXNativeTarget "Funny Quotes" */ = {
+		43BD1A73260D4EFD000EF772 /* Build configuration list for PBXNativeTarget "Quotes" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				43BD1A74260D4EFD000EF772 /* Debug */,

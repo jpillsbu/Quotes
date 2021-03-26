@@ -1,0 +1,52 @@
+[
+    {
+        "author": "Steve Jobs",
+        "titleQuote": "Now, as you graduate to begin anew, I wish that for you, ‘Stay hungry, stay foolish’.",
+        "image": "apple",
+        "quotes": [
+            "Sometimes life hits you in the head with a brick. Don't lose faith.",
+            "Your time is limited, so don’t waste it living someone else’s life. Don’t be trapped by dogma, which is living with the results of other people’s thinking.",
+            "And most important, have the courage to follow your heart and intuition. They somehow already know what you truly want to become. Everything else is secondary.",
+            "It’s more fun to be a pirate than to join the Navy.",
+            "Being the richest man in the cemetery doesn’t matter to me… Going to bed at night saying we’ve done something wonderful… that’s what matters to me."
+        ]
+    },
+    {
+        "author": "Bill Gates",
+        "titleQuote": "Don’t compare yourself with anyone in this world…if you do so, you are insulting yourself.",
+        "image": "microsoft",
+        "quotes": [
+            "I choose a lazy person to do a hard job. Because a lazy person will find an easy way to do it.",
+            "Success is a lousy teacher. It seduces smart people into thinking they can’t lose.",
+            "If you are born poor it’s not your mistake, but if you die poor it’s your mistake.",
+            "Life is not fair get, used to it!",
+            "We make the future sustainable when we invest in the poor, not when we insist on their suffering.",
+            "It’s fine to celebrate success but it is more important to heed the lessons of failure."
+        ]
+    },
+    {
+        "author": "Walt Disney",
+        "titleQuote": "When you’re curious, you find lots of interesting things to do.",
+        "image": "disney",
+        "quotes": [
+            "That’s the real trouble with the world. Too many people grow up.",
+            "Laughter is timeless, imagination has no age, dreams are forever.",
+            "It’s kind of fun to do the impossible.",
+            "All our dreams can come true, if we have the courage to pursue them.",
+            "We keep moving forward, opening new doors, and doing new things, because we’re curious and curiosity keeps leading us down new paths.",
+            "All the adversity I’ve had in my life, all my troubles and obstacles, have strengthened me… You may not realize it when it happens, but a kick in the teeth may be the best thing in the world for you."
+        ]
+    },
+    {
+        "author": "Nikola Tesla",
+        "titleQuote": "If you want to find the secrets of the universe, think in terms of energy, frequency and vibration.",
+        "image": "tesla",
+        "quotes": [
+            "Our virtues and our failings are inseparable, like force and matter. When they separate, man is no more.",
+            "Let the future tell the truth, and evaluate each one according to his work and accomplishments. The present is theirs; the future, for which I have really worked, is mine.",
+            "Of all things, I liked books best.",
+            "The scientists of today think deeply instead of clearly. One must be sane to think clearly, but one can think deeply and be quite insane.",
+            "I don’t care that they stole my idea …  I care that they don’t have any of their own."
+        ]
+    }
+]
