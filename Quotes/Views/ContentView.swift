@@ -12,39 +12,19 @@ struct ContentView: View {
     
     var body: some View {
         NavigationView {
-            List (model.quotes) { q in
-                ZStack {
-                    NavigationLink(
-                        destination: QuoteDetailView(quote: q)) {
-                            EmptyView()
-                    }.frame(width: 0, height: 0)
-                    .hidden()
-                    Image(q.image)
-                        .resizable()
-                        .scaledToFill()
-                        .frame(width: 350, height: 350, alignment: /*@START_MENU_TOKEN@*/.center/*@END_MENU_TOKEN@*/)
-                        .clipped()
-                        .cornerRadius(12)
-                    VStack(alignment: .leading) {
-                        Text(q.titleQuote)
-                            .font(.title)
-                            .fontWeight(.bold)
-                            .foregroundColor(Color.white)
-                            .multilineTextAlignment(.leading)
-                            .padding(.all)
-                            .shadow(radius: 10)
-                        Text("- " + q.author)
-                            .font(.title)
-                            .fontWeight(.bold)
-                            .foregroundColor(Color.white)
-                            .multilineTextAlignment(.leading)
-                            .padding(.all)
-                            .shadow(radius: 10)
+            ScrollView {
+                VStack(spacing: 20) {
+                    ForEach(model.quotes) { q in
+                        NavigationLink(
+                            destination: QuoteDetailView(quote: q),
+                            label: {
+                                Card(quote: q)
+                            })
+                        
                     }
                 }
-                .padding(.vertical)
             }
-            .navigationBarTitle("Famous Quotes")
+            .navigationBarTitle("Quotes")
         }
     }
 }

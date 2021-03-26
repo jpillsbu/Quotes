@@ -26,7 +26,6 @@ struct QuoteDetailView: View {
 
 struct QuoteDetailView_Previews: PreviewProvider {
     static var previews: some View {
-        let model = QuoteModel()
-        QuoteDetailView(quote: model.quotes[0])
+        QuoteDetailView(quote: Quote.getTestData())
     }
 }
